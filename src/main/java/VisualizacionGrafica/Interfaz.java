@@ -203,8 +203,8 @@ public class Interfaz extends JFrame {
 
         String comidaInicialStr = JOptionPane.showInputDialog(this, "Introduce la cantidad inicial de comida que se le dará el primer día");
         int comidaInicial = Integer.parseInt(comidaInicialStr);
-        if (comidaInicial < 0 || comidaInicial >= 300) {
-            JOptionPane.showMessageDialog(this, "La cantidad inicial de comida debe ser un valor entero menor que 300");
+        if (comidaInicial < 0 || comidaInicial >= 300000) {
+            JOptionPane.showMessageDialog(this, "La cantidad inicial de comida debe ser un valor entero menor que 300000");
             return;
         }
 

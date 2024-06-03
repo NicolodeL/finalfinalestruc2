@@ -1,39 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="finalfinalestruc:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8454a30-cb6c-4516-b6ec-a1fceb1164a0" name="Changes" comment="">
+    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="Empiezo con los cambios para adaptar el proyecto a la parte 2, pudiendo cambiar la duracion de la poblacion">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bacteria_Poblacion Azul.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bacteria_Poblacion MARCOS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bacteria_Poblacion Roja.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimento_Experimento 2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimento_Experimento hua.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
-  <component name="ProjectId" id="2hNGZpT0j7UkWM1ifb2oCoFOtgS" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2fzzqb1SMYnHCGKliABn8HwGKmI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nicol/IdeaProjects/finalfinalestruc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="VisualizacionGrafica" />
+      <recent name="Experimentos" />
+      <recent name="Clases" />
+      <recent name="org.example" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -44,16 +94,414 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8454a30-cb6c-4516-b6ec-a1fceb1164a0" name="Changes" comment="" />
-      <created>1717427182773</created>
+      <changelist id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="" />
+      <created>1714818887401</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1717427182773</updated>
-      <workItem from="1717427183871" duration="1000" />
+      <updated>1714818887401</updated>
+      <workItem from="1714818888453" duration="34478000" />
+      <workItem from="1714997798003" duration="423000" />
+      <workItem from="1714999025691" duration="158000" />
+      <workItem from="1715000052852" duration="1003000" />
+      <workItem from="1715006827378" duration="594000" />
+      <workItem from="1715008005541" duration="2412000" />
+      <workItem from="1715074712354" duration="5000" />
+      <workItem from="1715150501133" duration="630000" />
+      <workItem from="1715245409076" duration="1575000" />
+      <workItem from="1715600220885" duration="2743000" />
+      <workItem from="1716132789135" duration="23000" />
+      <workItem from="1716294674882" duration="164000" />
+      <workItem from="1717424417580" duration="34000" />
+      <workItem from="1717424618500" duration="1773000" />
     </task>
+    <task id="LOCAL-00001" summary="Creo un par de clases para ir creando los experimentos">
+      <option name="closed" value="true" />
+      <created>1714827247131</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714827247131</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adapto la clase listado a la clase experimento">
+      <option name="closed" value="true" />
+      <created>1714827362934</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714827362934</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Creo la nueva clase bacteria para poder tener mas de una poblacion por experimento">
+      <option name="closed" value="true" />
+      <created>1714827657703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714827657703</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Hago cambios para poder guardar los distintos experimentos">
+      <option name="closed" value="true" />
+      <created>1714828038473</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714828038473</updated>
+    </task>
+    <task id="LOCAL-00005" summary="empiezo la creacion de interfaz grafica en el main">
+      <option name="closed" value="true" />
+      <created>1714828328863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714828328863</updated>
+    </task>
+    <task id="LOCAL-00006" summary="creo la interfaz grafica, aun sin funciones">
+      <option name="closed" value="true" />
+      <created>1714828612230</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714828612230</updated>
+    </task>
+    <task id="LOCAL-00007" summary="añado la funcion de agregar experimento">
+      <option name="closed" value="true" />
+      <created>1714828711985</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714828711985</updated>
+    </task>
+    <task id="LOCAL-00008" summary="empiezo a hacer cambios para que a la hora de crear el experimento limite de forma que solo puedas poner datos coherentes">
+      <option name="closed" value="true" />
+      <created>1714829232146</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714829232146</updated>
+    </task>
+    <task id="LOCAL-00009" summary="nuevamente añado limitaciones a la funcion agregarexperimento, para evitar el uso de valores indebidos">
+      <option name="closed" value="true" />
+      <created>1714829826352</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714829826352</updated>
+    </task>
+    <task id="LOCAL-00010" summary="con un par de cambios finalizo la implementacion agregarexperimento">
+      <option name="closed" value="true" />
+      <created>1714830423722</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714830423722</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Cambio la distribuion de la interfaz y la creacion de poblaciones y experimentos">
+      <option name="closed" value="true" />
+      <created>1714831604204</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714831604204</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Arreglo los botones y le doy funcionamiento a la nueva interfaz">
+      <option name="closed" value="true" />
+      <created>1714833393813</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714833393813</updated>
+    </task>
+    <task id="LOCAL-00013" summary="hago cambios para evitar que se dupliquen los experimentos">
+      <option name="closed" value="true" />
+      <created>1714833764766</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714833764766</updated>
+    </task>
+    <task id="LOCAL-00014" summary="permito crear poblaciones dentro de experimentos">
+      <option name="closed" value="true" />
+      <created>1714835361949</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714835361949</updated>
+    </task>
+    <task id="LOCAL-00015" summary="hago cambios para que los experimentos tengan los nombres que les des">
+      <option name="closed" value="true" />
+      <created>1714836109041</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714836109041</updated>
+    </task>
+    <task id="LOCAL-00016" summary="hago el mismo cambio anterior para las poblaciones de bacterias">
+      <option name="closed" value="true" />
+      <created>1714836183260</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714836183260</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Empiezo ha hacer funcionar la funcion guardarExperimentos">
+      <option name="closed" value="true" />
+      <created>1714836724374</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714836724374</updated>
+    </task>
+    <task id="LOCAL-00018" summary="creo la funcion cargar experimentos">
+      <option name="closed" value="true" />
+      <created>1714837134129</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714837134129</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Hago que los archivos solo se guardan cuando se le da al boton guardar experimentos">
+      <option name="closed" value="true" />
+      <created>1714837803541</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714837803541</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Cambio la ubicacion donde se guardan los archivos">
+      <option name="closed" value="true" />
+      <created>1714838532768</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714838532768</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ahora hago que los archivos se guarden en la carpeta de recursos, ya se guardan correctamente">
+      <option name="closed" value="true" />
+      <created>1714838781662</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714838781662</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Modifico el boton cargarExperimentos y ahora carga los experimentos y sus poblaciones">
+      <option name="closed" value="true" />
+      <created>1714839016843</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714839016843</updated>
+    </task>
+    <task id="LOCAL-00023" summary="creo un boton para borrar poblaciones">
+      <option name="closed" value="true" />
+      <created>1714839938267</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714839938267</updated>
+    </task>
+    <task id="LOCAL-00024" summary="soluciono un fallo que volvia a crear la poblacion una vez borrada">
+      <option name="closed" value="true" />
+      <created>1714840173142</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714840173142</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Creo el boton informacion pero produce problemas al cargar los archivos">
+      <option name="closed" value="true" />
+      <created>1714843590564</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1714843590564</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Adapto el codigo de informacion al mio para no causar problemas">
+      <option name="closed" value="true" />
+      <created>1714846705361</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714846705361</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Hago multiples cambios con el fin de solucionar un error">
+      <option name="closed" value="true" />
+      <created>1714850065876</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1714850065876</updated>
+    </task>
+    <task id="LOCAL-00028" summary="le doy uso al boton informacion">
+      <option name="closed" value="true" />
+      <created>1714851190707</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1714851190707</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Hago un cambio final en el boton de informacion">
+      <option name="closed" value="true" />
+      <created>1714851374960</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1714851374960</updated>
+    </task>
+    <task id="LOCAL-00030" summary="añado para que el boton informacion de tambien la comida que da cada uno de los dias">
+      <option name="closed" value="true" />
+      <created>1714851625108</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1714851625108</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Cambio para que los archivos se guarden en formato texto">
+      <option name="closed" value="true" />
+      <created>1714852164735</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1714852164735</updated>
+    </task>
+    <task id="LOCAL-00032" summary="cambio para que el programa habra archivos de texto tambien">
+      <option name="closed" value="true" />
+      <created>1714852372716</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1714852372716</updated>
+    </task>
+    <task id="LOCAL-00033" summary="permito guardar las poblaciones de cada experimento">
+      <option name="closed" value="true" />
+      <created>1714852752482</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1714852752482</updated>
+    </task>
+    <task id="LOCAL-00034" summary="añado un metodo que convierte lineas de texto en clases">
+      <option name="closed" value="true" />
+      <created>1714853286768</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1714853286768</updated>
+    </task>
+    <task id="LOCAL-00035" summary="cambio en el guardado de experimentos">
+      <option name="closed" value="true" />
+      <created>1714853584640</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1714853584640</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Hago otro cambio para facilitar la lectura del archivo de texto">
+      <option name="closed" value="true" />
+      <created>1714854004201</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1714854004201</updated>
+    </task>
+    <task id="LOCAL-00037" summary="añado todos los getters y ssetter a la clase bacteria">
+      <option name="closed" value="true" />
+      <created>1714854227133</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1714854227133</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Con esta ultima modificaion consigo que los archivos se guarden en texto sin problema">
+      <option name="closed" value="true" />
+      <created>1714854484254</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1714854484254</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Borro archivos inecesarios y hago push de los necesarios">
+      <option name="closed" value="true" />
+      <created>1714855086240</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1714855086240</updated>
+    </task>
+    <task id="LOCAL-00040" summary="añado otro archivo de ejemplo para demostrar el funcionamiento">
+      <option name="closed" value="true" />
+      <created>1714856768044</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1714856768044</updated>
+    </task>
+    <task id="LOCAL-00041" summary="añado test de todos">
+      <option name="closed" value="true" />
+      <created>1714858516722</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1714858516722</updated>
+    </task>
+    <task id="LOCAL-00042" summary="añado test de todos">
+      <option name="closed" value="true" />
+      <created>1714860599588</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1714860599588</updated>
+    </task>
+    <task id="LOCAL-00043" summary="En el anterior commit añadi el archivo .jar">
+      <option name="closed" value="true" />
+      <created>1714860643789</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1714860643789</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Empiezo con los cambios para adaptar el proyecto a la parte 2, pudiendo cambiar la duracion de la poblacion">
+      <option name="closed" value="true" />
+      <created>1715602894755</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1715602894755</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hago que los archivos solo se guardan cuando se le da al boton guardar experimentos" />
+    <MESSAGE value="Cambio la ubicacion donde se guardan los archivos" />
+    <MESSAGE value="ahora hago que los archivos se guarden en la carpeta de recursos, ya se guardan correctamente" />
+    <MESSAGE value="Modifico el boton cargarExperimentos y ahora carga los experimentos y sus poblaciones" />
+    <MESSAGE value="creo un boton para borrar poblaciones" />
+    <MESSAGE value="soluciono un fallo que volvia a crear la poblacion una vez borrada" />
+    <MESSAGE value="Creo el boton informacion pero produce problemas al cargar los archivos" />
+    <MESSAGE value="Adapto el codigo de informacion al mio para no causar problemas" />
+    <MESSAGE value="Hago multiples cambios con el fin de solucionar un error" />
+    <MESSAGE value="le doy uso al boton informacion" />
+    <MESSAGE value="Hago un cambio final en el boton de informacion" />
+    <MESSAGE value="añado para que el boton informacion de tambien la comida que da cada uno de los dias" />
+    <MESSAGE value="Cambio para que los archivos se guarden en formato texto" />
+    <MESSAGE value="cambio para que el programa habra archivos de texto tambien" />
+    <MESSAGE value="permito guardar las poblaciones de cada experimento" />
+    <MESSAGE value="añado un metodo que convierte lineas de texto en clases" />
+    <MESSAGE value="cambio en el guardado de experimentos" />
+    <MESSAGE value="Hago otro cambio para facilitar la lectura del archivo de texto" />
+    <MESSAGE value="añado todos los getters y ssetter a la clase bacteria" />
+    <MESSAGE value="Con esta ultima modificaion consigo que los archivos se guarden en texto sin problema" />
+    <MESSAGE value="Borro archivos inecesarios y hago push de los necesarios" />
+    <MESSAGE value="añado otro archivo de ejemplo para demostrar el funcionamiento" />
+    <MESSAGE value="añado test de todos" />
+    <MESSAGE value="En el anterior commit añadi el archivo .jar" />
+    <MESSAGE value="Empiezo con los cambios para adaptar el proyecto a la parte 2, pudiendo cambiar la duracion de la poblacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Empiezo con los cambios para adaptar el proyecto a la parte 2, pudiendo cambiar la duracion de la poblacion" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
