@@ -1,0 +1,41 @@
+Nombre de la bacteria: Poblacion MARCOS
+Fecha de inicio: Mon Apr 11 00:00:00 CEST 2005
+Fecha de fin: Wed May 11 00:00:00 CEST 2005
+Número de bacterias iniciales: 60
+Temperatura: 20.0
+Condiciones de luminosidad: Alta
+Comida inicial: 20
+Día de incremento de comida: 16
+Comida en el día de incremento: 200
+Comida final: 10
+Dosis de alimento para el día 1: 20.0
+Dosis de alimento para el día 2: 19.655172413793103
+Dosis de alimento para el día 3: 19.310344827586206
+Dosis de alimento para el día 4: 18.96551724137931
+Dosis de alimento para el día 5: 18.620689655172413
+Dosis de alimento para el día 6: 18.275862068965516
+Dosis de alimento para el día 7: 17.93103448275862
+Dosis de alimento para el día 8: 17.586206896551722
+Dosis de alimento para el día 9: 17.241379310344826
+Dosis de alimento para el día 10: 16.89655172413793
+Dosis de alimento para el día 11: 16.551724137931036
+Dosis de alimento para el día 12: 16.20689655172414
+Dosis de alimento para el día 13: 15.862068965517242
+Dosis de alimento para el día 14: 15.517241379310345
+Dosis de alimento para el día 15: 15.172413793103448
+Dosis de alimento para el día 16: 14.827586206896552
+Dosis de alimento para el día 17: 14.482758620689655
+Dosis de alimento para el día 18: 14.137931034482758
+Dosis de alimento para el día 19: 13.793103448275861
+Dosis de alimento para el día 20: 13.448275862068964
+Dosis de alimento para el día 21: 13.103448275862068
+Dosis de alimento para el día 22: 12.75862068965517
+Dosis de alimento para el día 23: 12.413793103448276
+Dosis de alimento para el día 24: 12.068965517241379
+Dosis de alimento para el día 25: 11.724137931034482
+Dosis de alimento para el día 26: 11.379310344827585
+Dosis de alimento para el día 27: 11.034482758620689
+Dosis de alimento para el día 28: 10.689655172413792
+Dosis de alimento para el día 29: 10.344827586206897
+Dosis de alimento para el día 30: 10.0
+

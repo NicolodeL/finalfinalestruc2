@@ -1,0 +1,21 @@
+Nombre del experimento: Experimento 2
+Nombre de la bacteria: Poblacion Roja
+Fecha de inicio: Sat Sep 09 00:00:00 CEST 2000
+Fecha de fin: Mon Oct 09 00:00:00 CEST 2000
+Número de bacterias iniciales: 60
+Temperatura: 14.0
+Condiciones de luminosidad: Alta
+Comida inicial: 50
+Día de incremento de comida: 20
+Comida en el día de incremento: 73
+Comida final: 7
+Nombre de la bacteria: Poblacion Azul
+Fecha de inicio: Wed Jun 09 00:00:00 CEST 2004
+Fecha de fin: Fri Jul 09 00:00:00 CEST 2004
+Número de bacterias iniciales: 15
+Temperatura: 22.0
+Condiciones de luminosidad: Media
+Comida inicial: 70
+Día de incremento de comida: 18
+Comida en el día de incremento: 140
+Comida final: 12

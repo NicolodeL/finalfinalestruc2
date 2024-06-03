@@ -1,0 +1,11 @@
+Nombre del experimento: Experimento 1
+Nombre de la bacteria: 123
+Fecha de inicio: Sat Feb 12 00:00:00 CET 2000
+Fecha de fin: Mon Mar 13 00:00:00 CET 2000
+Número de bacterias iniciales: 5
+Temperatura: 3.0
+Condiciones de luminosidad: Alta
+Comida inicial: 7
+Día de incremento de comida: 8
+Comida en el día de incremento: 9
+Comida final: 10
