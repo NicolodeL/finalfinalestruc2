@@ -205,38 +205,52 @@ public class Interfaz extends JFrame {
         String[] patrones = {"Incremento lineal-decremento lineal", "Constante", "Incremento", "Parcialmente constante"};
         String patronSimulacion = (String) JOptionPane.showInputDialog(this, "Selecciona el tipo de patrón de simulación", "Patrón de Simulación", JOptionPane.QUESTION_MESSAGE, null, patrones, patrones[0]);
 
+        Bacteria bacteria = null;
+        int comidaInicial = 0;
+        int diaIncrementoComida = 0;
+        int comidaDiaIncremento = 0;
+        int comidaFinal = 0;
         switch (patronSimulacion) {
             case "Incremento lineal-decremento lineal":
-                int comidaInicial = Integer.parseInt(comidaInicialStr);
                 if (comidaInicial < 0 || comidaInicial >= 300000) {
                     JOptionPane.showMessageDialog(this, "La cantidad inicial de comida debe ser un valor entero menor que 300000");
                     return;
                 }
 
                 String diaIncrementoComidaStr = JOptionPane.showInputDialog(this, "Introduce el día hasta el cual se debe incrementar la cantidad de comida");
-                int diaIncrementoComida = Integer.parseInt(diaIncrementoComidaStr);
+                diaIncrementoComida = Integer.parseInt(diaIncrementoComidaStr);
                 if (diaIncrementoComida <= 0 || diaIncrementoComida >= 30) {
                     JOptionPane.showMessageDialog(this, "El día hasta el cual se debe incrementar la cantidad de comida debe ser un valor entero mayor que 0 y menor que 30");
                     return;
                 }
 
                 String comidaDiaIncrementoStr = JOptionPane.showInputDialog(this, "Introduce la comida de este día");
-                int comidaDiaIncremento = Integer.parseInt(comidaDiaIncrementoStr);
+                comidaDiaIncremento = Integer.parseInt(comidaDiaIncrementoStr);
                 if (comidaDiaIncremento < 0 || comidaDiaIncremento >= 300) {
                     JOptionPane.showMessageDialog(this, "La comida de este día debe ser un valor entero menor que 300");
                     return;
                 }
 
                 String comidaFinalStr = JOptionPane.showInputDialog(this, "Introduce la cantidad final de comida en el día 30");
-                int comidaFinal = Integer.parseInt(comidaFinalStr);
+                comidaFinal = Integer.parseInt(comidaFinalStr);
                 if (comidaFinal < 0 || comidaFinal >= 300) {
                     JOptionPane.showMessageDialog(this, "La cantidad final de comida en el día 30 debe ser un valor entero menor que 300");
                     return;
                 }
                 break;
             case "Constante":
-                // Aquí es donde colocarías el código para manejar este tipo de patrón de simulación
+                String comidaConstanteStr = JOptionPane.showInputDialog(this, "Introduce la cantidad de comida que se dará todos los días");
+                int comidaConstante = Integer.parseInt(comidaConstanteStr);
+                if (comidaConstante < 0 || comidaConstante >= 300000) {
+                    JOptionPane.showMessageDialog(this, "La cantidad de comida debe ser un valor entero menor que 300000");
+                    return;
+                }
+                comidaInicial = comidaConstante;
+                diaIncrementoComida = 0; // No hay incremento de comida
+                comidaDiaIncremento = comidaConstante;
+                comidaFinal = comidaConstante;
                 break;
+
             case "Incremento":
                 // Aquí es donde colocarías el código para manejar este tipo de patrón de simulación
                 break;
@@ -245,7 +259,12 @@ public class Interfaz extends JFrame {
                 break;
         }
 
-        Bacteria bacteria = new Bacteria(nombre, fechaInicio, fechaFin, numBacteriasIniciales, temperatura, condicionLuminosidad, comidaInicial, diaIncrementoComida, comidaDiaIncremento, comidaFinal);
+        bacteria = new Bacteria.Builder(nombre, fechaInicio, fechaFin, numBacteriasIniciales, temperatura, condicionLuminosidad)
+                .comidaInicial(comidaInicial)
+                .diaIncrementoComida(diaIncrementoComida)
+                .comidaDiaIncremento(comidaDiaIncremento)
+                .comidaFinal(comidaFinal)
+                .build();
         experimento.agregarBacteria(bacteria);
 
         DefaultListModel<Experimento> model = (DefaultListModel<Experimento>) experimentoList.getModel();

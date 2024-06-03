@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
- public class Bacteria implements Serializable {
+public class Bacteria implements Serializable {
     private String nombre;
     private Date fechaInicio;
     private Date fechaFin;
@@ -18,103 +18,104 @@ import java.util.Locale;
     private int comidaDiaIncremento;
     private int comidaFinal;
 
-
-    public Bacteria(String nombre, Date fechaInicio, Date fechaFin, int numBacteriasIniciales, double temperatura, String condicionesLuminosidad, int comidaInicial, int diaIncrementoComida, int comidaDiaIncremento, int comidaFinal) {
-        this.nombre = nombre;
-        this.fechaInicio = fechaInicio;
-        this.fechaFin = fechaFin;
-        this.numBacteriasIniciales = numBacteriasIniciales;
-        this.temperatura = temperatura;
-        this.condicionesLuminosidad = condicionesLuminosidad;
-        this.comidaInicial = comidaInicial;
-        this.diaIncrementoComida = diaIncrementoComida;
-        this.comidaDiaIncremento = comidaDiaIncremento;
-        this.comidaFinal = comidaFinal;
-    }
-
-
-    public String toString() {
-        return nombre;
+    private Bacteria(Builder builder) {
+        this.nombre = builder.nombre;
+        this.fechaInicio = builder.fechaInicio;
+        this.fechaFin = builder.fechaFin;
+        this.numBacteriasIniciales = builder.numBacteriasIniciales;
+        this.temperatura = builder.temperatura;
+        this.condicionesLuminosidad = builder.condicionesLuminosidad;
+        this.comidaInicial = builder.comidaInicial;
+        this.diaIncrementoComida = builder.diaIncrementoComida;
+        this.comidaDiaIncremento = builder.comidaDiaIncremento;
+        this.comidaFinal = builder.comidaFinal;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String getFechaInicio() {
+        return fechaInicio.toString();
     }
 
-    public Date getFechaInicio() {
-        return fechaInicio;
+    public String getFechaFin() {
+        return fechaFin.toString();
     }
 
-    public void setFechaInicio(Date fechaInicio) {
-        this.fechaInicio = fechaInicio;
+    public String getNumBacteriasIniciales() {
+        return Integer.toString(numBacteriasIniciales);
     }
 
-    public Date getFechaFin() {
-        return fechaFin;
-    }
-
-    public void setFechaFin(Date fechaFin) {
-        this.fechaFin = fechaFin;
-    }
-
-    public int getNumBacteriasIniciales() {
-        return numBacteriasIniciales;
-    }
-
-    public void setNumBacteriasIniciales(int numBacteriasIniciales) {
-        this.numBacteriasIniciales = numBacteriasIniciales;
-    }
-
-    public double getTemperatura() {
-        return temperatura;
-    }
-
-    public void setTemperatura(double temperatura) {
-        this.temperatura = temperatura;
+    public String getTemperatura() {
+        return Double.toString(temperatura);
     }
 
     public String getCondicionesLuminosidad() {
         return condicionesLuminosidad;
     }
 
-    public void setCondicionesLuminosidad(String condicionesLuminosidad) {
-        this.condicionesLuminosidad = condicionesLuminosidad;
+    public String getComidaInicial() {
+        return Integer.toString(comidaInicial);
     }
 
-    public int getComidaInicial() {
-        return comidaInicial;
+    public String getDiaIncrementoComida() {
+        return Integer.toString(diaIncrementoComida);
     }
 
-    public void setComidaInicial(int comidaInicial) {
-        this.comidaInicial = comidaInicial;
+    public String getComidaDiaIncremento() {
+        return Integer.toString(comidaDiaIncremento);
     }
 
-    public int getDiaIncrementoComida() {
-        return diaIncrementoComida;
+    public String getComidaFinal() {
+        return Integer.toString(comidaFinal);
     }
 
-    public void setDiaIncrementoComida(int diaIncrementoComida) {
-        this.diaIncrementoComida = diaIncrementoComida;
-    }
+    public static class Builder {
+        private final String nombre;
+        private final Date fechaInicio;
+        private final Date fechaFin;
+        private final int numBacteriasIniciales;
+        private final double temperatura;
+        private final String condicionesLuminosidad;
 
-    public int getComidaDiaIncremento() {
-        return comidaDiaIncremento;
-    }
+        private int comidaInicial;
+        private int diaIncrementoComida;
+        private int comidaDiaIncremento;
+        private int comidaFinal;
 
-    public void setComidaDiaIncremento(int comidaDiaIncremento) {
-        this.comidaDiaIncremento = comidaDiaIncremento;
-    }
+        public Builder(String nombre, Date fechaInicio, Date fechaFin, int numBacteriasIniciales, double temperatura, String condicionesLuminosidad) {
+            this.nombre = nombre;
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
+            this.numBacteriasIniciales = numBacteriasIniciales;
+            this.temperatura = temperatura;
+            this.condicionesLuminosidad = condicionesLuminosidad;
+        }
 
-    public int getComidaFinal() {
-        return comidaFinal;
-    }
+        public Builder comidaInicial(int val) {
+            comidaInicial = val;
+            return this;
+        }
 
-    public void setComidaFinal(int comidaFinal) {
-        this.comidaFinal = comidaFinal;
+        public Builder diaIncrementoComida(int val) {
+            diaIncrementoComida = val;
+            return this;
+        }
+
+        public Builder comidaDiaIncremento(int val) {
+            comidaDiaIncremento = val;
+            return this;
+        }
+
+        public Builder comidaFinal(int val) {
+            comidaFinal = val;
+            return this;
+        }
+
+        public Bacteria build() {
+            return new Bacteria(this);
+        }
     }
 
     public int calcularComida(int dia) {
@@ -200,7 +201,12 @@ import java.util.Locale;
             }
         }
 
-        return new Bacteria(nombre, fechaInicio, fechaFin, numBacteriasIniciales, temperatura, condicionesLuminosidad, comidaInicial, diaIncrementoComida, comidaDiaIncremento, comidaFinal);
+        return new Bacteria.Builder(nombre, fechaInicio, fechaFin, numBacteriasIniciales, temperatura, condicionesLuminosidad)
+                .comidaInicial(comidaInicial)
+                .diaIncrementoComida(diaIncrementoComida)
+                .comidaDiaIncremento(comidaDiaIncremento)
+                .comidaFinal(comidaFinal)
+                .build();
     }
 
 

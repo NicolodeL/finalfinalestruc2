@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="Empiezo con los cambios para adaptar el proyecto a la parte 2, pudiendo cambiar la duracion de la poblacion">
+    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="creo un switch para poder elegir el patron del experimento en la poblacion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacteria_Poblacion Azul.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacteria_Poblacion MARCOS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacteria_Poblacion Roja.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experimento_Experimento 2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experimento_Experimento hua.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Bacteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Bacteria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -466,15 +461,29 @@
       <option name="project" value="LOCAL" />
       <updated>1715602894755</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="permito que se pueda cambiar la duracion de los experimentos y la cantidad de comida ahora esta en milgramos (300000 max)">
+      <option name="closed" value="true" />
+      <created>1717429929507</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1717429929507</updated>
+    </task>
+    <task id="LOCAL-00046" summary="creo un switch para poder elegir el patron del experimento en la poblacion">
+      <option name="closed" value="true" />
+      <created>1717430759006</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1717430759006</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hago que los archivos solo se guardan cuando se le da al boton guardar experimentos" />
-    <MESSAGE value="Cambio la ubicacion donde se guardan los archivos" />
     <MESSAGE value="ahora hago que los archivos se guarden en la carpeta de recursos, ya se guardan correctamente" />
     <MESSAGE value="Modifico el boton cargarExperimentos y ahora carga los experimentos y sus poblaciones" />
     <MESSAGE value="creo un boton para borrar poblaciones" />
@@ -498,7 +507,9 @@
     <MESSAGE value="añado test de todos" />
     <MESSAGE value="En el anterior commit añadi el archivo .jar" />
     <MESSAGE value="Empiezo con los cambios para adaptar el proyecto a la parte 2, pudiendo cambiar la duracion de la poblacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empiezo con los cambios para adaptar el proyecto a la parte 2, pudiendo cambiar la duracion de la poblacion" />
+    <MESSAGE value="permito que se pueda cambiar la duracion de los experimentos y la cantidad de comida ahora esta en milgramos (300000 max)" />
+    <MESSAGE value="creo un switch para poder elegir el patron del experimento en la poblacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="creo un switch para poder elegir el patron del experimento en la poblacion" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
