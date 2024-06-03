@@ -17,6 +17,7 @@ public class Bacteria implements Serializable {
     private int diaIncrementoComida;
     private int comidaDiaIncremento;
     private int comidaFinal;
+    private String patronSimulacion;
 
     private Bacteria(Builder builder) {
         this.nombre = builder.nombre;
@@ -29,6 +30,7 @@ public class Bacteria implements Serializable {
         this.diaIncrementoComida = builder.diaIncrementoComida;
         this.comidaDiaIncremento = builder.comidaDiaIncremento;
         this.comidaFinal = builder.comidaFinal;
+        this.patronSimulacion = builder.patronSimulacion;
     }
 
     public String getNombre() {
@@ -70,6 +72,9 @@ public class Bacteria implements Serializable {
     public String getComidaFinal() {
         return Integer.toString(comidaFinal);
     }
+    public String getPatronSimulacion() {
+        return this.patronSimulacion; // nuevo método
+    }
 
     public static class Builder {
         private final String nombre;
@@ -78,6 +83,7 @@ public class Bacteria implements Serializable {
         private final int numBacteriasIniciales;
         private final double temperatura;
         private final String condicionesLuminosidad;
+        private String patronSimulacion;
 
         private int comidaInicial;
         private int diaIncrementoComida;
@@ -116,13 +122,36 @@ public class Bacteria implements Serializable {
         public Bacteria build() {
             return new Bacteria(this);
         }
+        public Builder patronSimulacion(String val) {
+            patronSimulacion = val; // nuevo método
+            return this;
+        }
     }
 
-    public int calcularComida(int dia) {
-        // Implementar la lógica para calcular la cantidad de comida en el día dado
-        return 0; // Cambiar esto por la implementación correcta
+    public int calcularComida(int dia, String patronSimulacion) {
+        long duracion = (fechaFin.getTime() - fechaInicio.getTime()) / (1000 * 60 * 60 * 24) + 1;
+        switch (patronSimulacion) {
+            case "Incremento lineal-decremento lineal":
+                if (dia <= diaIncrementoComida) {
+                    double incrementoDiario = (double) (comidaDiaIncremento - comidaInicial) / diaIncrementoComida;
+                    return (int) (comidaInicial + incrementoDiario * (dia - 1));
+                } else {
+                    double decrementoDiario = (double) (comidaDiaIncremento - comidaFinal) / (duracion - diaIncrementoComida);
+                    return (int) (comidaDiaIncremento - decrementoDiario * (dia - diaIncrementoComida));
+                }
+            case "Constante":
+                return comidaInicial;
+            case "Incremento":
+                double incrementoDiario = (double) (comidaFinal - comidaInicial) / (duracion - 1);
+                return (int) (comidaInicial + incrementoDiario * (dia - 1));
+            case "Parcialmente constante":
+                // La comida alterna entre comidaInicial y 0 cada día
+                return dia % 2 == 0 ? 0 : comidaInicial;
+            default:
+                throw new IllegalArgumentException("Patrón de simulación desconocido: " + patronSimulacion);
+        }
     }
-    public String getInformacionDetallada() {
+    public String getInformacionDetallada(String patronSimulacion) {
         StringBuilder informacion = new StringBuilder();
         informacion.append("Nombre de la bacteria: ").append(nombre).append("\n")
                 .append("Fecha de inicio: ").append(fechaInicio).append("\n")
@@ -136,15 +165,11 @@ public class Bacteria implements Serializable {
                 .append("Comida final: ").append(comidaFinal).append("\n");
 
         // Calcular la dosis de alimento para cada día
-        double incrementoDiario = (comidaFinal - comidaInicial) / 29.0; // asumimos que el incremento es lineal
-        for (int dia = 1; dia <= 30; dia++) {
-            double dosisDia = comidaInicial + (dia - 1) * incrementoDiario;
+        long duracion = (fechaFin.getTime() - fechaInicio.getTime()) / (1000 * 60 * 60 * 24) + 1;
+        for (int dia = 1; dia <= duracion; dia++) {
+            int dosisDia = calcularComida(dia, patronSimulacion);
             informacion.append("Dosis de alimento para el día ").append(dia).append(": ").append(dosisDia).append("\n");
         }
-
-
-
-
 
         return informacion.toString();
     }

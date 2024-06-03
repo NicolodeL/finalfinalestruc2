@@ -129,7 +129,7 @@ public class Interfaz extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 Bacteria bacteriaSeleccionada = bacteriaList.getSelectedValue();
                 if (bacteriaSeleccionada != null) {
-                    String informacionBacteria = bacteriaSeleccionada.getInformacionDetallada();
+                    String informacionBacteria = bacteriaSeleccionada.getInformacionDetallada(bacteriaSeleccionada.getPatronSimulacion());
                     JOptionPane.showMessageDialog(null, informacionBacteria);
 
                     try (PrintWriter out = new PrintWriter(new FileWriter("bacteria_" + bacteriaSeleccionada.getNombre() + ".txt", true))) {
@@ -201,7 +201,6 @@ public class Interfaz extends JFrame {
         String[] condiciones = {"Alta", "Media", "Baja"};
         String condicionLuminosidad = (String) JOptionPane.showInputDialog(this, "Selecciona las condiciones de luminosidad", "Luminosidad", JOptionPane.QUESTION_MESSAGE, null, condiciones, condiciones[0]);
 
-        String comidaInicialStr = JOptionPane.showInputDialog(this, "Introduce la cantidad inicial de comida que se le dará el primer día");
         String[] patrones = {"Incremento lineal-decremento lineal", "Constante", "Incremento", "Parcialmente constante"};
         String patronSimulacion = (String) JOptionPane.showInputDialog(this, "Selecciona el tipo de patrón de simulación", "Patrón de Simulación", JOptionPane.QUESTION_MESSAGE, null, patrones, patrones[0]);
 
@@ -212,22 +211,25 @@ public class Interfaz extends JFrame {
         int comidaFinal = 0;
         switch (patronSimulacion) {
             case "Incremento lineal-decremento lineal":
+                String comidaInicialStr = JOptionPane.showInputDialog(this, "Introduce la cantidad inicial de comida");
+                comidaInicial = Integer.parseInt(comidaInicialStr);
                 if (comidaInicial < 0 || comidaInicial >= 300000) {
                     JOptionPane.showMessageDialog(this, "La cantidad inicial de comida debe ser un valor entero menor que 300000");
                     return;
                 }
 
+                int duracionExperimento = (int) ((fechaFin.getTime() - fechaInicio.getTime()) / (1000 * 60 * 60 * 24));
                 String diaIncrementoComidaStr = JOptionPane.showInputDialog(this, "Introduce el día hasta el cual se debe incrementar la cantidad de comida");
                 diaIncrementoComida = Integer.parseInt(diaIncrementoComidaStr);
-                if (diaIncrementoComida <= 0 || diaIncrementoComida >= 30) {
-                    JOptionPane.showMessageDialog(this, "El día hasta el cual se debe incrementar la cantidad de comida debe ser un valor entero mayor que 0 y menor que 30");
+                if (diaIncrementoComida <= 0 || diaIncrementoComida > duracionExperimento) {
+                    JOptionPane.showMessageDialog(this, "El día hasta el cual se debe incrementar la cantidad de comida debe ser un valor entero mayor que 0 y menor o igual que " + duracionExperimento);
                     return;
                 }
 
                 String comidaDiaIncrementoStr = JOptionPane.showInputDialog(this, "Introduce la comida de este día");
                 comidaDiaIncremento = Integer.parseInt(comidaDiaIncrementoStr);
-                if (comidaDiaIncremento < 0 || comidaDiaIncremento >= 300) {
-                    JOptionPane.showMessageDialog(this, "La comida de este día debe ser un valor entero menor que 300");
+                if (comidaDiaIncremento < 0 || comidaDiaIncremento >= 300000) {
+                    JOptionPane.showMessageDialog(this, "La comida de este día debe ser un valor entero menor que 300000");
                     return;
                 }
 
@@ -252,10 +254,29 @@ public class Interfaz extends JFrame {
                 break;
 
             case "Incremento":
-                // Aquí es donde colocarías el código para manejar este tipo de patrón de simulación
+                comidaInicialStr = JOptionPane.showInputDialog(this, "Introduce la cantidad inicial de comida");
+                comidaInicial = Integer.parseInt(comidaInicialStr);
+                if (comidaInicial < 0 || comidaInicial >= 300000) {
+                    JOptionPane.showMessageDialog(this, "La cantidad inicial de comida debe ser un valor entero menor que 300000");
+                    return;
+                }
+
+                comidaFinalStr = JOptionPane.showInputDialog(this, "Introduce la cantidad final de comida en el día 30");
+                comidaFinal = Integer.parseInt(comidaFinalStr);
+                if (comidaFinal < 0 || comidaFinal >= 300000) {
+                    JOptionPane.showMessageDialog(this, "La cantidad final de comida en el día 30 debe ser un valor entero menor que 300000");
+                    return;
+                }
                 break;
             case "Parcialmente constante":
-                // Aquí es donde colocarías el código para manejar este tipo de patrón de simulación
+                String comidaParcialmenteConstanteStr = JOptionPane.showInputDialog(this, "Introduce la cantidad de comida que se dará cada dos días");
+                int comidaParcialmenteConstante = Integer.parseInt(comidaParcialmenteConstanteStr);
+                if (comidaParcialmenteConstante < 0 || comidaParcialmenteConstante >= 300000) {
+                    JOptionPane.showMessageDialog(this, "La cantidad de comida debe ser un valor entero menor que 300000");
+                    return;
+                }
+                comidaInicial = comidaParcialmenteConstante;
+                comidaFinal = comidaParcialmenteConstante;
                 break;
         }
 
@@ -264,6 +285,7 @@ public class Interfaz extends JFrame {
                 .diaIncrementoComida(diaIncrementoComida)
                 .comidaDiaIncremento(comidaDiaIncremento)
                 .comidaFinal(comidaFinal)
+                .patronSimulacion(patronSimulacion) // nuevo método
                 .build();
         experimento.agregarBacteria(bacteria);
 
