@@ -202,31 +202,47 @@ public class Interfaz extends JFrame {
         String condicionLuminosidad = (String) JOptionPane.showInputDialog(this, "Selecciona las condiciones de luminosidad", "Luminosidad", JOptionPane.QUESTION_MESSAGE, null, condiciones, condiciones[0]);
 
         String comidaInicialStr = JOptionPane.showInputDialog(this, "Introduce la cantidad inicial de comida que se le dará el primer día");
-        int comidaInicial = Integer.parseInt(comidaInicialStr);
-        if (comidaInicial < 0 || comidaInicial >= 300000) {
-            JOptionPane.showMessageDialog(this, "La cantidad inicial de comida debe ser un valor entero menor que 300000");
-            return;
-        }
+        String[] patrones = {"Incremento lineal-decremento lineal", "Constante", "Incremento", "Parcialmente constante"};
+        String patronSimulacion = (String) JOptionPane.showInputDialog(this, "Selecciona el tipo de patrón de simulación", "Patrón de Simulación", JOptionPane.QUESTION_MESSAGE, null, patrones, patrones[0]);
 
-        String diaIncrementoComidaStr = JOptionPane.showInputDialog(this, "Introduce el día hasta el cual se debe incrementar la cantidad de comida");
-        int diaIncrementoComida = Integer.parseInt(diaIncrementoComidaStr);
-        if (diaIncrementoComida <= 0 || diaIncrementoComida >= 30) {
-            JOptionPane.showMessageDialog(this, "El día hasta el cual se debe incrementar la cantidad de comida debe ser un valor entero mayor que 0 y menor que 30");
-            return;
-        }
+        switch (patronSimulacion) {
+            case "Incremento lineal-decremento lineal":
+                int comidaInicial = Integer.parseInt(comidaInicialStr);
+                if (comidaInicial < 0 || comidaInicial >= 300000) {
+                    JOptionPane.showMessageDialog(this, "La cantidad inicial de comida debe ser un valor entero menor que 300000");
+                    return;
+                }
 
-        String comidaDiaIncrementoStr = JOptionPane.showInputDialog(this, "Introduce la comida de este día");
-        int comidaDiaIncremento = Integer.parseInt(comidaDiaIncrementoStr);
-        if (comidaDiaIncremento < 0 || comidaDiaIncremento >= 300) {
-            JOptionPane.showMessageDialog(this, "La comida de este día debe ser un valor entero menor que 300");
-            return;
-        }
+                String diaIncrementoComidaStr = JOptionPane.showInputDialog(this, "Introduce el día hasta el cual se debe incrementar la cantidad de comida");
+                int diaIncrementoComida = Integer.parseInt(diaIncrementoComidaStr);
+                if (diaIncrementoComida <= 0 || diaIncrementoComida >= 30) {
+                    JOptionPane.showMessageDialog(this, "El día hasta el cual se debe incrementar la cantidad de comida debe ser un valor entero mayor que 0 y menor que 30");
+                    return;
+                }
 
-        String comidaFinalStr = JOptionPane.showInputDialog(this, "Introduce la cantidad final de comida en el día 30");
-        int comidaFinal = Integer.parseInt(comidaFinalStr);
-        if (comidaFinal < 0 || comidaFinal >= 300) {
-            JOptionPane.showMessageDialog(this, "La cantidad final de comida en el día 30 debe ser un valor entero menor que 300");
-            return;
+                String comidaDiaIncrementoStr = JOptionPane.showInputDialog(this, "Introduce la comida de este día");
+                int comidaDiaIncremento = Integer.parseInt(comidaDiaIncrementoStr);
+                if (comidaDiaIncremento < 0 || comidaDiaIncremento >= 300) {
+                    JOptionPane.showMessageDialog(this, "La comida de este día debe ser un valor entero menor que 300");
+                    return;
+                }
+
+                String comidaFinalStr = JOptionPane.showInputDialog(this, "Introduce la cantidad final de comida en el día 30");
+                int comidaFinal = Integer.parseInt(comidaFinalStr);
+                if (comidaFinal < 0 || comidaFinal >= 300) {
+                    JOptionPane.showMessageDialog(this, "La cantidad final de comida en el día 30 debe ser un valor entero menor que 300");
+                    return;
+                }
+                break;
+            case "Constante":
+                // Aquí es donde colocarías el código para manejar este tipo de patrón de simulación
+                break;
+            case "Incremento":
+                // Aquí es donde colocarías el código para manejar este tipo de patrón de simulación
+                break;
+            case "Parcialmente constante":
+                // Aquí es donde colocarías el código para manejar este tipo de patrón de simulación
+                break;
         }
 
         Bacteria bacteria = new Bacteria(nombre, fechaInicio, fechaFin, numBacteriasIniciales, temperatura, condicionLuminosidad, comidaInicial, diaIncrementoComida, comidaDiaIncremento, comidaFinal);
