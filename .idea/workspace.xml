@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="sigo modificando el codigo ordenar para que funcione correctamente en la interfaz">
+    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="finalizo la creacion del boton de ordenar  y amplio la anchura de la interfaz para que quepa todo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,15 +106,7 @@
       <workItem from="1716294674882" duration="164000" />
       <workItem from="1717424417580" duration="34000" />
       <workItem from="1717424618500" duration="1773000" />
-      <workItem from="1717521955393" duration="2242000" />
-    </task>
-    <task id="LOCAL-00005" summary="empiezo la creacion de interfaz grafica en el main">
-      <option name="closed" value="true" />
-      <created>1714828328863</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1714828328863</updated>
+      <workItem from="1717521955393" duration="3233000" />
     </task>
     <task id="LOCAL-00006" summary="creo la interfaz grafica, aun sin funciones">
       <option name="closed" value="true" />
@@ -501,14 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717523338020</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="finalizo la creacion del boton de ordenar  y amplio la anchura de la interfaz para que quepa todo">
+      <option name="closed" value="true" />
+      <created>1717524533191</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1717524533191</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="le doy uso al boton informacion" />
     <MESSAGE value="Hago un cambio final en el boton de informacion" />
     <MESSAGE value="añado para que el boton informacion de tambien la comida que da cada uno de los dias" />
     <MESSAGE value="Cambio para que los archivos se guarden en formato texto" />
@@ -533,7 +531,8 @@
     <MESSAGE value="añado el codigo con el que funcionara el boton" />
     <MESSAGE value="soluciono errores con el el codigo del boton para ordenar" />
     <MESSAGE value="sigo modificando el codigo ordenar para que funcione correctamente en la interfaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="sigo modificando el codigo ordenar para que funcione correctamente en la interfaz" />
+    <MESSAGE value="finalizo la creacion del boton de ordenar  y amplio la anchura de la interfaz para que quepa todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalizo la creacion del boton de ordenar  y amplio la anchura de la interfaz para que quepa todo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
