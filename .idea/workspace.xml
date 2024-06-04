@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="multiples pruebas de poblaciones disintas comprobando que los dias se calculen correctamente" />
+    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="soluciono errores con el el codigo del boton para ordenar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,30 +104,7 @@
       <workItem from="1716294674882" duration="164000" />
       <workItem from="1717424417580" duration="34000" />
       <workItem from="1717424618500" duration="1773000" />
-    </task>
-    <task id="LOCAL-00001" summary="Creo un par de clases para ir creando los experimentos">
-      <option name="closed" value="true" />
-      <created>1714827247131</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1714827247131</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Adapto la clase listado a la clase experimento">
-      <option name="closed" value="true" />
-      <created>1714827362934</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1714827362934</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Creo la nueva clase bacteria para poder tener mas de una poblacion por experimento">
-      <option name="closed" value="true" />
-      <created>1714827657703</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1714827657703</updated>
+      <workItem from="1717521955393" duration="992000" />
     </task>
     <task id="LOCAL-00004" summary="Hago cambios para poder guardar los distintos experimentos">
       <option name="closed" value="true" />
@@ -497,16 +474,37 @@
       <option name="project" value="LOCAL" />
       <updated>1717440610362</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="creo un boton que ordera las poblaciones">
+      <option name="closed" value="true" />
+      <created>1717522484716</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1717522484716</updated>
+    </task>
+    <task id="LOCAL-00051" summary="añado el codigo con el que funcionara el boton">
+      <option name="closed" value="true" />
+      <created>1717522509827</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1717522509827</updated>
+    </task>
+    <task id="LOCAL-00052" summary="soluciono errores con el el codigo del boton para ordenar">
+      <option name="closed" value="true" />
+      <created>1717522946215</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1717522946215</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="soluciono un fallo que volvia a crear la poblacion una vez borrada" />
-    <MESSAGE value="Creo el boton informacion pero produce problemas al cargar los archivos" />
-    <MESSAGE value="Adapto el codigo de informacion al mio para no causar problemas" />
     <MESSAGE value="Hago multiples cambios con el fin de solucionar un error" />
     <MESSAGE value="le doy uso al boton informacion" />
     <MESSAGE value="Hago un cambio final en el boton de informacion" />
@@ -529,7 +527,10 @@
     <MESSAGE value="actualizo el switch y añado los dos primeros patrones, tambien cambio la clase bacteria para tener propiedades opcionales" />
     <MESSAGE value="agrego un switch para calcular la comida cada dia segun el tipo de patron que utlize la bacteria" />
     <MESSAGE value="multiples pruebas de poblaciones disintas comprobando que los dias se calculen correctamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="multiples pruebas de poblaciones disintas comprobando que los dias se calculen correctamente" />
+    <MESSAGE value="creo un boton que ordera las poblaciones" />
+    <MESSAGE value="añado el codigo con el que funcionara el boton" />
+    <MESSAGE value="soluciono errores con el el codigo del boton para ordenar" />
+    <option name="LAST_COMMIT_MESSAGE" value="soluciono errores con el el codigo del boton para ordenar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,14 +1,4 @@
 Nombre del experimento: Experimento 3
-Nombre de la bacteria: Poblacion Norte
-Fecha de inicio: Sat May 04 00:00:00 CEST 2024
-Fecha de fin: Mon Jun 03 00:00:00 CEST 2024
-Número de bacterias iniciales: 80
-Temperatura: 18.0
-Condiciones de luminosidad: Baja
-Comida inicial: 75
-Día de incremento de comida: 16
-Comida en el día de incremento: 150
-Comida final: 20
 Nombre de la bacteria: Poblacion Sur
 Fecha de inicio: Wed Aug 04 00:00:00 CEST 2004
 Fecha de fin: Fri Sep 03 00:00:00 CEST 2004
@@ -19,3 +9,13 @@ Comida inicial: 90
 Día de incremento de comida: 15
 Comida en el día de incremento: 180
 Comida final: 30
+Nombre de la bacteria: Poblacion Norte
+Fecha de inicio: Sat May 04 00:00:00 CEST 2024
+Fecha de fin: Mon Jun 03 00:00:00 CEST 2024
+Número de bacterias iniciales: 80
+Temperatura: 18.0
+Condiciones de luminosidad: Baja
+Comida inicial: 75
+Día de incremento de comida: 16
+Comida en el día de incremento: 150
+Comida final: 20
