@@ -86,6 +86,10 @@ public class Interfaz extends JFrame {
             }
         });
 
+        JButton ordenarButton = new JButton("Ordenar Poblaciones");
+        buttonPanel.add(ordenarButton);
+        ordenarButton.addActionListener(e -> ordenarBacterias());
+
         borrarPoblacionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -377,4 +381,5 @@ public class Interfaz extends JFrame {
             }
         }
     }
+
 }
