@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="soluciono errores con el el codigo del boton para ordenar" />
+    <list default="true" id="aa1593cf-e8ef-4c0f-92ed-79fb1bfa421b" name="Changes" comment="sigo modificando el codigo ordenar para que funcione correctamente en la interfaz">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VisualizacionGrafica/Interfaz.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,15 +107,7 @@
       <workItem from="1716294674882" duration="164000" />
       <workItem from="1717424417580" duration="34000" />
       <workItem from="1717424618500" duration="1773000" />
-      <workItem from="1717521955393" duration="992000" />
-    </task>
-    <task id="LOCAL-00004" summary="Hago cambios para poder guardar los distintos experimentos">
-      <option name="closed" value="true" />
-      <created>1714828038473</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1714828038473</updated>
+      <workItem from="1717521955393" duration="2242000" />
     </task>
     <task id="LOCAL-00005" summary="empiezo la creacion de interfaz grafica en el main">
       <option name="closed" value="true" />
@@ -498,14 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717522946215</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="sigo modificando el codigo ordenar para que funcione correctamente en la interfaz">
+      <option name="closed" value="true" />
+      <created>1717523338020</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1717523338020</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hago multiples cambios con el fin de solucionar un error" />
     <MESSAGE value="le doy uso al boton informacion" />
     <MESSAGE value="Hago un cambio final en el boton de informacion" />
     <MESSAGE value="añado para que el boton informacion de tambien la comida que da cada uno de los dias" />
@@ -530,7 +532,8 @@
     <MESSAGE value="creo un boton que ordera las poblaciones" />
     <MESSAGE value="añado el codigo con el que funcionara el boton" />
     <MESSAGE value="soluciono errores con el el codigo del boton para ordenar" />
-    <option name="LAST_COMMIT_MESSAGE" value="soluciono errores con el el codigo del boton para ordenar" />
+    <MESSAGE value="sigo modificando el codigo ordenar para que funcione correctamente en la interfaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="sigo modificando el codigo ordenar para que funcione correctamente en la interfaz" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

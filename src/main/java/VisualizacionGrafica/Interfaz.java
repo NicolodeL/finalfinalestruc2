@@ -25,6 +25,7 @@ public class Interfaz extends JFrame {
     private JButton loadButton;
     private JButton borrarPoblacionButton;
     private JButton informacionButton;
+    private JButton botonOrdenar;
 
 
 
@@ -46,6 +47,7 @@ public class Interfaz extends JFrame {
         loadButton = new JButton("Cargar Experimentos");
         borrarPoblacionButton = new JButton("Borrar Población");
         informacionButton = new JButton("Información");
+        botonOrdenar = new JButton("Ordenar Bacterias");
 
         add(new JScrollPane(experimentoList), BorderLayout.CENTER);
 
@@ -55,6 +57,7 @@ public class Interfaz extends JFrame {
         buttonPanel.add(loadButton);
         buttonPanel.add(borrarPoblacionButton);
         buttonPanel.add(informacionButton);
+        buttonPanel.add(botonOrdenar);
         add(buttonPanel, BorderLayout.SOUTH);
 
         addButton.addActionListener(e -> {
@@ -88,9 +91,13 @@ public class Interfaz extends JFrame {
             }
         });
 
-        JButton ordenarButton = new JButton("Ordenar Poblaciones");
-        buttonPanel.add(ordenarButton);
-        ordenarButton.addActionListener(e -> ordenarBacterias());
+        // Asumiendo que 'botonOrdenar' es el botón de ordenamiento
+        botonOrdenar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ordenarBacterias();
+            }
+        });
 
         borrarPoblacionButton.addActionListener(new ActionListener() {
             @Override
@@ -407,10 +414,17 @@ public class Interfaz extends JFrame {
                     break;
             }
 
-            DefaultListModel<Bacteria> model = (DefaultListModel<Bacteria>) bacteriaList.getModel();
-            model.clear();
+            ListModel<Bacteria> model = bacteriaList.getModel();
+            DefaultListModel<Bacteria> defaultModel;
+            if (model instanceof DefaultListModel) {
+                defaultModel = (DefaultListModel<Bacteria>) model;
+            } else {
+                defaultModel = new DefaultListModel<>();
+                bacteriaList.setModel(defaultModel);
+            }
+            defaultModel.clear();
             for (Bacteria bacteria : bacterias) {
-                model.addElement(bacteria);
+                defaultModel.addElement(bacteria);
             }
         }
     }
