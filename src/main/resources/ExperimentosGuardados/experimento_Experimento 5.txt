@@ -1,0 +1,21 @@
+Nombre del experimento: Experimento 5
+Nombre de la bacteria: Azul
+Fecha de inicio: Sat Jan 01 00:00:00 CET 2000
+Fecha de fin: Sat Mar 11 00:00:00 CET 2000
+Número de bacterias iniciales: 100
+Temperatura: 20.0
+Condiciones de luminosidad: Alta
+Comida inicial: 20
+Día de incremento de comida: 0
+Comida en el día de incremento: 20
+Comida final: 20
+Nombre de la bacteria: Roja
+Fecha de inicio: Sat Sep 09 00:00:00 CEST 2000
+Fecha de fin: Sun Oct 29 00:00:00 CEST 2000
+Número de bacterias iniciales: 600
+Temperatura: 40.0
+Condiciones de luminosidad: Alta
+Comida inicial: 50
+Día de incremento de comida: 0
+Comida en el día de incremento: 50
+Comida final: 50

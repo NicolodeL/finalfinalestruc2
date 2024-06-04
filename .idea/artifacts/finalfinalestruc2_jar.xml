@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="finalfinalestruc2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/finalfinalestruc2_jar</output-path>
+    <root id="archive" name="finalfinalestruc2.jar">
+      <element id="module-output" name="finalfinalestruc2" />
+    </root>
+  </artifact>
+</component>
