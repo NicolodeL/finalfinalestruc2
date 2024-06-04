@@ -12,7 +12,9 @@ import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
 
 public class Interfaz extends JFrame {
     private JList<Experimento> experimentoList;
