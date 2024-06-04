@@ -381,5 +381,35 @@ public class Interfaz extends JFrame {
             }
         }
     }
+    private void ordenarBacterias() {
+        Experimento experimento = experimentoList.getSelectedValue();
+        if (experimento == null) {
+            JOptionPane.showMessageDialog(this, "Por favor, selecciona un experimento");
+            return;
+        }
 
+        String[] opciones = {"Fecha de inicio", "Nombre", "Número de bacterias"};
+        String opcion = (String) JOptionPane.showInputDialog(this, "Selecciona el criterio de ordenamiento", "Ordenar", JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
+
+        if (opcion != null) {
+            List<Bacteria> bacterias = experimento.obtenerBacterias();
+            switch (opcion) {
+                case "Fecha de inicio":
+                    bacterias.sort(Comparator.comparing(Bacteria::getFechaInicio));
+                    break;
+                case "Nombre":
+                    bacterias.sort(Comparator.comparing(Bacteria::getNombre));
+                    break;
+                case "Número de bacterias":
+                    bacterias.sort(Comparator.comparing(Bacteria::getNumBacteriasIniciales));
+                    break;
+            }
+
+            DefaultListModel<Bacteria> model = (DefaultListModel<Bacteria>) bacteriaList.getModel();
+            model.clear();
+            for (Bacteria bacteria : bacterias) {
+                model.addElement(bacteria);
+            }
+        }
+    }
 }
