@@ -24,7 +24,7 @@ https://github.com/NicolodeL/finalfinalestruc2.git
 ## Técnicas de ordenación y búsqueda
 ### Decidí ordenar los archivos en una carpeta en los recursos, y dejar la busqueda para el usuario tras dejar que el programa se encargase de cargar los archivos mediante un boton.
 ## Diagrama de clases UML
-### ![image](https://github.com/NicolodeL/finalfinalestruc/assets/146822499/8db4bde5-c7fb-4bb0-84eb-67eb95048de8)
+### ![image](https://github.com/NicolodeL/finalfinalestruc2/assets/146822499/ac7fa719-3371-4d40-8201-a546d63eea9d)
 ## Listado de fallos conocidos y funcionalidades definidas en el enunciado que no se han implementado en el código entregado
 ### En principio el código esta implementado sin errores exceptuando que para que se actualizen las poblaciones en el archivo ejecutable .jar necesitas crear más de un experimetno, también que al guardarse los archivos en el proyecto en la carpeta recursos en el ejecutable .jar no podras guardar los experimentos, en cuanto a las implementaciones en el codigo entregado todas las funcionalidades estan implementadas
 ## Pruebas en el codigo
